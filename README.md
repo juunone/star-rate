@@ -22,7 +22,6 @@ function readNumbers(arr){
         }
     }
 
-
     if(calcArr.length){
         for(let i = 0; i < calcArr.length; i++){
             if(calcArr[i].length > 1){
