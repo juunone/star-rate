@@ -38,4 +38,4 @@ readNumbers(testCase);
 ```
 
 # 결제 페이지 UI
-[Codesandbox:https://0yx8m9vwn0.codesandbox.io/](https://0yx8m9vwn0.codesandbox.io/)
+[Codesandbox : https://0yx8m9vwn0.codesandbox.io/](https://0yx8m9vwn0.codesandbox.io/)
