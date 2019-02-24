@@ -10,7 +10,7 @@ class StarRate extends Component {
     }
 
     _resetRating(e){
-        if(e.type === "mouseleave"){        
+        if(e.type === "mouseleave" || e.type === "onTouchEnd"){        
             this.props.onChange(this.props.cacheIdx,this.props.cacheRating);
         }else if(e.type === "click"){
             this.props.onChange(0,0);
@@ -47,9 +47,9 @@ class StarRate extends Component {
                     onMouseOver={(e)=>{this.props._mouseOver(e,i)}}
                     onMouseMove={(e)=>{this.props._mouseOver(e,i)}}
                     onMouseLeave={(e)=>{this._resetRating(e)}}                    
-                    // onTouchMove={(e)=>{this.props._mouseOver(e,i)}}
-                    // onTouchStart={(e)=>{this.props._mouseOver(e,i)}}
-                    // onTouchEnd={(e)=>{this._resetRating(e)}}
+                    onTouchMove={(e)=>{this.props._mouseOver(e,i)}}
+                    onTouchStart={(e)=>{this.props._mouseOver(e,i)}}
+                    onTouchEnd={(e)=>{this._resetRating(e)}}
                 >
                 </label>
             )

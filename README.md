@@ -37,5 +37,16 @@ readNumbers(testCase);
 
 ```
 
+# 별점 평가 컴포넌트
+```
+git clone https://github.com/juunone/laftel-test.git
+
+cd laftel-test
+
+yarn install
+
+yarn start
+```
+
 # 결제 페이지 UI
 [Codesandbox : https://0yx8m9vwn0.codesandbox.io/](https://0yx8m9vwn0.codesandbox.io/)
