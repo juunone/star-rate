@@ -37,6 +37,71 @@ readNumbers(testCase);
 
 ```
 
+# Reverse with Tag
+```javascript
+let testCase = "hello <div>it's me</div> world! <p>nice to meet u</p>"
+
+function reverse(str){
+  let reversed = "";    
+  let txt = "";
+  let txtMerge = "";
+  let cnt = 0;
+  let idx = null;
+  let obj = {};
+
+  for (var i = str.length - 1; i >= 0; i--){                
+    if(txt.length){
+      if(cnt === 1 || cnt === 3){
+        txt += str[i];
+      }      
+    }
+
+    if(str[i] === ">"){
+      cnt++;
+      txt += str[i];
+
+      if(cnt === 1){
+        idx = i;
+        reversed += i;
+      }      
+    }else{      
+      if(!txt.length && cnt === 0){        
+        reversed += str[i];
+      }else{
+        if(cnt === 2){
+          txt += str[i];
+        }
+      }
+    }
+
+    if(str[i] === "<"){
+      cnt++;        
+      txtMerge += txt;    
+      obj[idx] = txtMerge.split('').reverse().join('');
+
+      if(cnt > 3){
+        cnt = 0;
+        txtMerge = "";        
+      }            
+
+      txt = "";
+    }
+  }    
+
+  let matchStr = "";
+  for(let i in obj){
+    if(matchStr !== ""){
+      matchStr = matchStr.replace(i, obj[i]);
+    }else{
+      matchStr = reversed.replace(i, obj[i]);
+    }
+  }
+  console.log('matchStr',matchStr);
+  return matchStr;
+}
+reverse(testCase)
+```
+
 # 별점 평가 컴포넌트
 ```
 git clone https://github.com/juunone/laftel-test.git
