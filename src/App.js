@@ -10,6 +10,7 @@ class App extends Component {
           <img src={Empty} className="" alt="empty" />
           <img src={Empty} className="" alt="empty" />
           <img src={Empty} className="" alt="empty" />
+          <img src={Empty} className="" alt="empty" />
       </div>
     );
   }
