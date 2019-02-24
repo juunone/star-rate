@@ -39,4 +39,3 @@ readNumbers(testCase);
 
 # 결제 페이지 UI
 [Codesandbox : https://0yx8m9vwn0.codesandbox.io/](https://0yx8m9vwn0.codesandbox.io/)
->>>>>>> 5917a2a571dc57be22fc163bc81d27c0c53cecee
