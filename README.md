@@ -2,7 +2,7 @@
 ```
 git clone https://github.com/juunone/star-rate.git
 
-cd star-rate
+cd star-ra
 
 yarn install
 
